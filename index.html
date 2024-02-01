@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<title>blue</title>
+	<link rel="stylesheet" type="text/css" href="css/bluestyle.css">
+</head>
+<body>
+	<script type="text/javascript">
+		document.addEventListener('mousemove', function(e){
+			const body = document.querySelector('body');
+			const bubbles = document.createElement('span');
+			bubbles.style.left = -40 + e.offsetX+'px';
+			bubbles.style.top = -40 + e.offsetY+'px';
+			body.appendChild(bubbles);
+		});
+	</script>
+</body>
+</html>
